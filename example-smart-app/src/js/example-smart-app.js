@@ -12,9 +12,9 @@
         var patient = smart.patient;
         var pt = patient.read();
         var obv = smart.patient.api.fetchAll({
-                    //type: 'Observation',
+                    type: 'Observation',
                     //type: 'Procedure',
-                    type: 'Encounter',
+                    //type: 'Encounter',
                     query: {
                       code: {
                         $or: ['http://loinc.org|8302-2', 'http://loinc.org|8462-4',
